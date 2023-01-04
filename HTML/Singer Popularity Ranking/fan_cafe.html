@@ -15,15 +15,17 @@
 </div>
 <h2>로그인</h2>
 NeverLand로 오고 싶으신가요? 그럼 아래에 ID,Pw를 입력해주세요
-<form action = "서버" method = "post">
+<form action = "서버" method = "post" autocomplete = "on">
 
 <p>
 
-<label for ="id_txt">ID</label>: <input id = "id_txt" type = "text" name = "id" value = "ID 입력해주세요."></p>
+<label for ="id_txt">ID</label>: <input id = "id_txt" type = "text" name = "id" value = "ID 입력해주세요." autofocus></p>
 <p>
-<label for = "pw_txt">PassWord</label>: <input id = "pw_txt" type = "password" name = "password"></p>
+<label for = "pw_txt">PassWord</label>: <input id = "pw_txt" type = "password" name = "password" autocomplete = "off"></p>
 <p>
 <label for = "nick_txt">Nickname</label>: <input id = "nick_txt" type = "text" name = "nickname" value = "nickname"></p>
+<p><label for ="love rate">love rate</label>: <input id = "love rate" type = "range" name = "rangev" min = "0" max = "10"></p>
+<p><input type = "text" name = "Prevent automatic registration" placeholder = "NeverLand를 입력하세요" autocomplete = "off"></p>
 <p><input type = "submit" value = "전송~전송"></p>
 </body>
 </html>
