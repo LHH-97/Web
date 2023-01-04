@@ -4,12 +4,13 @@
 <head>
 <title>설문 조사</title>
 <meta charset = "utf-8">
+<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 </head>
 
 <body>
 <div style = "text-align:center">
 <img src = "설문조사.jpg" height = "300" alt = "image였어요" title  = "singer">
-<form action = "서버로 보내려 하니 form태그가 필요">
+<form action = "서버로 보내려 하니 form태그가 필요" method = "post">
 <h3>당신의 성별은 무엇 인가요?</h3>
 <select name = "gender">
 	<option value = "male">남성</option>
@@ -26,16 +27,16 @@
 </select>
 <p>
 <h3>팬 클럽 가입 유무</h3>
-있음 : <input type = "radio" name = "choose" value = "yes">
-없음 : <input type = "radio" name = "choose" value = "No" checked>
+<label for = "yes_txt">있음</label> : <input id = "yes_txt" type = "radio" name = "choose" value = "yes">
+<label for = "no_txt">없음</label> : <input id = "no_txt" type = "radio" name = "choose" value = "No" checked>
 </p>
 <h3>가입하신 팬클럽이 있다면 모두 선택 해주세요</h3>
 <p>
-뉴진스 :<input type ="checkbox" name = " fan" value = "NewJeans">
-아이들: <input type ="checkbox" name = " fan" value = "NeverLand" checked>
-장범준 :<input type ="checkbox" name = " fan" value = "Jang" checked> 
-박효신 :<input type ="checkbox" name = " fan" value = "Park"> 
-임창정 :<input type ="checkbox" name = " fan" value = "Lim">
+<label for = "newjeans">뉴진스</label> :<input id = "newjeans" type ="checkbox" name = " fan" value = "NewJeans">
+<label for = "I-DLE">아이들</label> : <input id = "I-DLE" type ="checkbox" name = " fan" value = "NeverLand" checked>
+<label for = "Jang"> 장범준</label> :<input id = "Jang" type ="checkbox" name = " fan" value = "Jang" checked> 
+<label for = "Park">박효신</label> :<input id = "Park" type ="checkbox" name = " fan" value = "Park"> 
+<label for = "Lim">임창정</label> :<input id = "Lim" type ="checkbox" name = " fan" value = "Lim">
 </p>
 
 <h3>좋아하는 가수에게 응원의 말을 적어주세요</h3>
